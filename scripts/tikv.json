@@ -75,6 +75,1789 @@
           "decimals": 1,
           "editable": true,
           "error": false,
+          "fill": 5,
+          "grid": {},
+          "id": 56,
+          "legend": {
+            "alignAsTable": true,
+            "avg": false,
+            "current": true,
+            "max": false,
+            "min": false,
+            "rightSide": true,
+            "show": true,
+            "sideWidth": null,
+            "sort": "current",
+            "sortDesc": true,
+            "total": false,
+            "values": true
+          },
+          "lines": true,
+          "linewidth": 0,
+          "links": [],
+          "nullPointMode": "null",
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
+          "renderer": "flot",
+          "seriesOverrides": [],
+          "spaceLength": 10,
+          "span": 4,
+          "stack": true,
+          "steppedLine": false,
+          "targets": [
+            {
+              "expr": "sum(tikv_engine_size_bytes) by (job)",
+              "format": "time_series",
+              "intervalFactor": 2,
+              "legendFormat": "{{job}}",
+              "refId": "A",
+              "step": 10
+            }
+          ],
+          "thresholds": [],
+          "timeFrom": null,
+          "timeShift": null,
+          "title": "store size",
+          "tooltip": {
+            "msResolution": false,
+            "shared": true,
+            "sort": 0,
+            "value_type": "individual"
+          },
+          "type": "graph",
+          "xaxis": {
+            "buckets": null,
+            "mode": "time",
+            "name": null,
+            "show": true,
+            "values": []
+          },
+          "yaxes": [
+            {
+              "format": "decbytes",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": "0",
+              "show": true
+            },
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            }
+          ]
+        },
+        {
+          "aliasColors": {},
+          "bars": false,
+          "dashLength": 10,
+          "dashes": false,
+          "datasource": "${DS_TEST-CLUSTER}",
+          "decimals": 1,
+          "editable": true,
+          "error": false,
+          "fill": 5,
+          "grid": {},
+          "id": 1706,
+          "legend": {
+            "alignAsTable": true,
+            "avg": false,
+            "current": true,
+            "max": false,
+            "min": false,
+            "rightSide": true,
+            "show": true,
+            "sideWidth": null,
+            "sort": "current",
+            "sortDesc": true,
+            "total": false,
+            "values": true
+          },
+          "lines": true,
+          "linewidth": 0,
+          "links": [],
+          "nullPointMode": "null",
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
+          "renderer": "flot",
+          "seriesOverrides": [],
+          "spaceLength": 10,
+          "span": 4,
+          "stack": true,
+          "steppedLine": false,
+          "targets": [
+            {
+              "expr": "sum(tikv_store_size_bytes{type=\"available\"}) by (job)",
+              "format": "time_series",
+              "intervalFactor": 2,
+              "legendFormat": "{{job}}",
+              "refId": "A",
+              "step": 10
+            }
+          ],
+          "thresholds": [],
+          "timeFrom": null,
+          "timeShift": null,
+          "title": "available size",
+          "tooltip": {
+            "msResolution": false,
+            "shared": true,
+            "sort": 0,
+            "value_type": "individual"
+          },
+          "type": "graph",
+          "xaxis": {
+            "buckets": null,
+            "mode": "time",
+            "name": null,
+            "show": true,
+            "values": []
+          },
+          "yaxes": [
+            {
+              "format": "decbytes",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": "0",
+              "show": true
+            },
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            }
+          ]
+        },
+        {
+          "aliasColors": {},
+          "bars": false,
+          "dashLength": 10,
+          "dashes": false,
+          "datasource": "${DS_TEST-CLUSTER}",
+          "decimals": 1,
+          "editable": true,
+          "error": false,
+          "fill": 5,
+          "grid": {},
+          "id": 1707,
+          "legend": {
+            "alignAsTable": true,
+            "avg": false,
+            "current": true,
+            "max": false,
+            "min": false,
+            "rightSide": true,
+            "show": true,
+            "sideWidth": null,
+            "sort": "current",
+            "sortDesc": true,
+            "total": false,
+            "values": true
+          },
+          "lines": true,
+          "linewidth": 0,
+          "links": [],
+          "nullPointMode": "null",
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
+          "renderer": "flot",
+          "seriesOverrides": [],
+          "spaceLength": 10,
+          "span": 4,
+          "stack": true,
+          "steppedLine": false,
+          "targets": [
+            {
+              "expr": "sum(tikv_store_size_bytes{type=\"capacity\"}) by (job)",
+              "format": "time_series",
+              "intervalFactor": 2,
+              "legendFormat": "{{job}}",
+              "refId": "A",
+              "step": 10
+            }
+          ],
+          "thresholds": [],
+          "timeFrom": null,
+          "timeShift": null,
+          "title": "capacity size",
+          "tooltip": {
+            "msResolution": false,
+            "shared": true,
+            "sort": 0,
+            "value_type": "individual"
+          },
+          "type": "graph",
+          "xaxis": {
+            "buckets": null,
+            "mode": "time",
+            "name": null,
+            "show": true,
+            "values": []
+          },
+          "yaxes": [
+            {
+              "format": "decbytes",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": "0",
+              "show": true
+            },
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            }
+          ]
+        },
+        {
+          "aliasColors": {},
+          "bars": false,
+          "dashLength": 10,
+          "dashes": false,
+          "datasource": "${DS_TEST-CLUSTER}",
+          "decimals": 1,
+          "editable": true,
+          "error": false,
+          "fill": 0,
+          "grid": {},
+          "id": 1708,
+          "legend": {
+            "alignAsTable": true,
+            "avg": false,
+            "current": true,
+            "max": true,
+            "min": false,
+            "rightSide": true,
+            "show": true,
+            "sideWidth": 250,
+            "sort": "max",
+            "sortDesc": true,
+            "total": false,
+            "values": true
+          },
+          "lines": true,
+          "linewidth": 1,
+          "links": [],
+          "nullPointMode": "null",
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
+          "renderer": "flot",
+          "seriesOverrides": [],
+          "spaceLength": 10,
+          "span": 6,
+          "stack": false,
+          "steppedLine": false,
+          "targets": [
+            {
+              "expr": "sum(rate(tikv_thread_cpu_seconds_total[1m])) by (instance,job)",
+              "format": "time_series",
+              "intervalFactor": 2,
+              "legendFormat": "{{instance}}-{{job}}",
+              "refId": "A",
+              "step": 10
+            }
+          ],
+          "thresholds": [],
+          "timeFrom": null,
+          "timeShift": null,
+          "title": "cpu",
+          "tooltip": {
+            "msResolution": false,
+            "shared": true,
+            "sort": 0,
+            "value_type": "individual"
+          },
+          "type": "graph",
+          "xaxis": {
+            "buckets": null,
+            "mode": "time",
+            "name": null,
+            "show": true,
+            "values": []
+          },
+          "yaxes": [
+            {
+              "format": "percentunit",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": "0",
+              "show": true
+            },
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            }
+          ]
+        },
+        {
+          "aliasColors": {},
+          "bars": false,
+          "dashLength": 10,
+          "dashes": false,
+          "datasource": "${DS_TEST-CLUSTER}",
+          "decimals": 1,
+          "editable": true,
+          "error": false,
+          "fill": 0,
+          "grid": {},
+          "id": 1709,
+          "legend": {
+            "alignAsTable": true,
+            "avg": false,
+            "current": true,
+            "max": true,
+            "min": false,
+            "rightSide": true,
+            "show": true,
+            "sideWidth": 250,
+            "sort": "current",
+            "sortDesc": true,
+            "total": false,
+            "values": true
+          },
+          "lines": true,
+          "linewidth": 1,
+          "links": [],
+          "nullPointMode": "null",
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
+          "renderer": "flot",
+          "seriesOverrides": [],
+          "spaceLength": 10,
+          "span": 6,
+          "stack": false,
+          "steppedLine": false,
+          "targets": [
+            {
+              "expr": "",
+              "format": "time_series",
+              "intervalFactor": 2,
+              "legendFormat": "{{job}}",
+              "refId": "A",
+              "step": 10
+            }
+          ],
+          "thresholds": [],
+          "timeFrom": null,
+          "timeShift": null,
+          "title": "memory",
+          "tooltip": {
+            "msResolution": false,
+            "shared": true,
+            "sort": 0,
+            "value_type": "individual"
+          },
+          "type": "graph",
+          "xaxis": {
+            "buckets": null,
+            "mode": "time",
+            "name": null,
+            "show": true,
+            "values": []
+          },
+          "yaxes": [
+            {
+              "format": "percentunit",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": "0",
+              "show": true
+            },
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            }
+          ]
+        },
+        {
+          "aliasColors": {},
+          "bars": false,
+          "dashLength": 10,
+          "dashes": false,
+          "datasource": "${DS_TEST-CLUSTER}",
+          "decimals": 1,
+          "editable": true,
+          "error": false,
+          "fill": 0,
+          "grid": {},
+          "id": 1710,
+          "legend": {
+            "alignAsTable": true,
+            "avg": false,
+            "current": true,
+            "max": true,
+            "min": false,
+            "rightSide": true,
+            "show": true,
+            "sideWidth": 250,
+            "sort": "max",
+            "sortDesc": true,
+            "total": false,
+            "values": true
+          },
+          "lines": true,
+          "linewidth": 1,
+          "links": [],
+          "nullPointMode": "null",
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
+          "renderer": "flot",
+          "seriesOverrides": [],
+          "spaceLength": 10,
+          "span": 6,
+          "stack": false,
+          "steppedLine": false,
+          "targets": [
+            {
+              "expr": "rate(node_disk_io_time_ms[1m]) / 1000",
+              "format": "time_series",
+              "intervalFactor": 2,
+              "legendFormat": "{{instance}} - {{device}}",
+              "refId": "A",
+              "step": 10
+            }
+          ],
+          "thresholds": [],
+          "timeFrom": null,
+          "timeShift": null,
+          "title": "io utilization",
+          "tooltip": {
+            "msResolution": false,
+            "shared": true,
+            "sort": 0,
+            "value_type": "individual"
+          },
+          "type": "graph",
+          "xaxis": {
+            "buckets": null,
+            "mode": "time",
+            "name": null,
+            "show": true,
+            "values": []
+          },
+          "yaxes": [
+            {
+              "format": "percentunit",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": "0",
+              "show": true
+            },
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            }
+          ]
+        },
+        {
+          "aliasColors": {},
+          "bars": false,
+          "dashLength": 10,
+          "dashes": false,
+          "datasource": "${DS_TEST-CLUSTER}",
+          "decimals": 1,
+          "editable": true,
+          "error": false,
+          "fill": 0,
+          "grid": {},
+          "id": 1711,
+          "legend": {
+            "alignAsTable": true,
+            "avg": false,
+            "current": true,
+            "max": true,
+            "min": false,
+            "rightSide": true,
+            "show": true,
+            "sideWidth": null,
+            "sort": "current",
+            "sortDesc": true,
+            "total": false,
+            "values": true
+          },
+          "lines": true,
+          "linewidth": 1,
+          "links": [],
+          "nullPointMode": "null",
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
+          "renderer": "flot",
+          "seriesOverrides": [],
+          "spaceLength": 10,
+          "span": 6,
+          "stack": false,
+          "steppedLine": false,
+          "targets": [
+            {
+              "expr": "sum(rate(tikv_engine_flow_bytes{db=\"kv\", type=\"wal_file_bytes\"}[1m])) by (job)",
+              "format": "time_series",
+              "hide": false,
+              "intervalFactor": 2,
+              "legendFormat": "{{job}}-write",
+              "refId": "A",
+              "step": 10
+            },
+            {
+              "expr": "sum(rate(tikv_engine_flow_bytes{db=\"kv\", type=~\"bytes_read|iter_bytes_read\"}[1m])) by (job)",
+              "format": "time_series",
+              "hide": false,
+              "intervalFactor": 2,
+              "legendFormat": "{{job}}-read",
+              "refId": "B"
+            }
+          ],
+          "thresholds": [],
+          "timeFrom": null,
+          "timeShift": null,
+          "title": "MBps",
+          "tooltip": {
+            "msResolution": false,
+            "shared": true,
+            "sort": 0,
+            "value_type": "individual"
+          },
+          "type": "graph",
+          "xaxis": {
+            "buckets": null,
+            "mode": "time",
+            "name": null,
+            "show": true,
+            "values": []
+          },
+          "yaxes": [
+            {
+              "format": "Bps",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": "0",
+              "show": true
+            },
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            }
+          ]
+        },
+        {
+          "aliasColors": {},
+          "bars": false,
+          "dashLength": 10,
+          "dashes": false,
+          "datasource": "${DS_TEST-CLUSTER}",
+          "decimals": 1,
+          "editable": true,
+          "error": false,
+          "fill": 0,
+          "grid": {},
+          "id": 1713,
+          "legend": {
+            "alignAsTable": true,
+            "avg": false,
+            "current": true,
+            "hideEmpty": false,
+            "hideZero": false,
+            "max": true,
+            "min": false,
+            "rightSide": true,
+            "show": true,
+            "sideWidth": null,
+            "sort": "current",
+            "sortDesc": true,
+            "total": false,
+            "values": true
+          },
+          "lines": true,
+          "linewidth": 1,
+          "links": [],
+          "nullPointMode": "null",
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
+          "renderer": "flot",
+          "seriesOverrides": [],
+          "spaceLength": 10,
+          "span": 6,
+          "stack": false,
+          "steppedLine": false,
+          "targets": [
+            {
+              "expr": "sum(rate(tikv_grpc_msg_duration_seconds_count{type!=\"kv_gc\"}[1m])) by (type)",
+              "format": "time_series",
+              "hide": false,
+              "intervalFactor": 2,
+              "legendFormat": "{{job}}",
+              "refId": "A",
+              "step": 10
+            }
+          ],
+          "thresholds": [],
+          "timeFrom": null,
+          "timeShift": null,
+          "title": "QPS",
+          "tooltip": {
+            "msResolution": false,
+            "shared": true,
+            "sort": 0,
+            "value_type": "individual"
+          },
+          "type": "graph",
+          "xaxis": {
+            "buckets": null,
+            "mode": "time",
+            "name": null,
+            "show": true,
+            "values": []
+          },
+          "yaxes": [
+            {
+              "format": "ops",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": "0",
+              "show": true
+            },
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            }
+          ]
+        },
+        {
+          "aliasColors": {},
+          "bars": false,
+          "dashLength": 10,
+          "dashes": false,
+          "datasource": "${DS_TEST-CLUSTER}",
+          "decimals": 1,
+          "editable": true,
+          "error": false,
+          "fill": 0,
+          "grid": {},
+          "id": 1712,
+          "legend": {
+            "alignAsTable": true,
+            "avg": false,
+            "current": true,
+            "hideEmpty": false,
+            "hideZero": false,
+            "max": true,
+            "min": false,
+            "rightSide": true,
+            "show": true,
+            "sideWidth": null,
+            "sort": "current",
+            "sortDesc": true,
+            "total": false,
+            "values": true
+          },
+          "lines": true,
+          "linewidth": 1,
+          "links": [],
+          "nullPointMode": "null",
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
+          "renderer": "flot",
+          "seriesOverrides": [],
+          "spaceLength": 10,
+          "span": 6,
+          "stack": false,
+          "steppedLine": false,
+          "targets": [
+            {
+              "expr": "sum(rate(tikv_grpc_msg_fail_total{type!=\"kv_gc\"}[1m])) by (job)",
+              "format": "time_series",
+              "hide": false,
+              "intervalFactor": 2,
+              "legendFormat": "{{job}}",
+              "refId": "A",
+              "step": 10
+            }
+          ],
+          "thresholds": [],
+          "timeFrom": null,
+          "timeShift": null,
+          "title": "Errps",
+          "tooltip": {
+            "msResolution": false,
+            "shared": true,
+            "sort": 0,
+            "value_type": "individual"
+          },
+          "type": "graph",
+          "xaxis": {
+            "buckets": null,
+            "mode": "time",
+            "name": null,
+            "show": true,
+            "values": []
+          },
+          "yaxes": [
+            {
+              "format": "ops",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": "0",
+              "show": true
+            },
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            }
+          ]
+        },
+        {
+          "aliasColors": {},
+          "bars": false,
+          "dashLength": 10,
+          "dashes": false,
+          "datasource": "${DS_TEST-CLUSTER}",
+          "decimals": 1,
+          "editable": true,
+          "error": false,
+          "fill": 0,
+          "grid": {},
+          "id": 1715,
+          "legend": {
+            "alignAsTable": true,
+            "avg": false,
+            "current": true,
+            "max": true,
+            "min": false,
+            "rightSide": true,
+            "show": true,
+            "sideWidth": 250,
+            "sort": "current",
+            "sortDesc": true,
+            "total": false,
+            "values": true
+          },
+          "lines": true,
+          "linewidth": 1,
+          "links": [],
+          "nullPointMode": "null",
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
+          "renderer": "flot",
+          "seriesOverrides": [
+            {
+              "alias": "total",
+              "lines": false
+            }
+          ],
+          "spaceLength": 10,
+          "span": 6,
+          "stack": false,
+          "steppedLine": false,
+          "targets": [
+            {
+              "expr": "sum(tikv_pd_heartbeat_tick_total{type=\"leader\"}) by (job)",
+              "format": "time_series",
+              "hide": false,
+              "intervalFactor": 2,
+              "legendFormat": "{{job}}",
+              "metric": "tikv_pd_heartbeat_tick_total",
+              "refId": "A",
+              "step": 10
+            },
+            {
+              "expr": "delta(tikv_pd_heartbeat_tick_total{type=\"leader\"}[30s]) < -10",
+              "format": "time_series",
+              "hide": true,
+              "intervalFactor": 2,
+              "legendFormat": "",
+              "refId": "B"
+            }
+          ],
+          "thresholds": [],
+          "timeFrom": null,
+          "timeShift": null,
+          "title": "leader",
+          "tooltip": {
+            "msResolution": false,
+            "shared": true,
+            "sort": 0,
+            "value_type": "cumulative"
+          },
+          "type": "graph",
+          "xaxis": {
+            "buckets": null,
+            "mode": "time",
+            "name": null,
+            "show": true,
+            "values": []
+          },
+          "yaxes": [
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": "0",
+              "show": true
+            },
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            }
+          ]
+        },
+        {
+          "aliasColors": {},
+          "bars": false,
+          "dashLength": 10,
+          "dashes": false,
+          "datasource": "${DS_TEST-CLUSTER}",
+          "decimals": 1,
+          "editable": true,
+          "error": false,
+          "fill": 0,
+          "grid": {},
+          "id": 1714,
+          "legend": {
+            "alignAsTable": true,
+            "avg": false,
+            "current": true,
+            "max": true,
+            "min": false,
+            "rightSide": true,
+            "show": true,
+            "sideWidth": 300,
+            "total": false,
+            "values": true
+          },
+          "lines": true,
+          "linewidth": 1,
+          "links": [],
+          "nullPointMode": "null",
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
+          "renderer": "flot",
+          "seriesOverrides": [],
+          "spaceLength": 10,
+          "span": 6,
+          "stack": false,
+          "steppedLine": false,
+          "targets": [
+            {
+              "expr": "sum(tikv_pd_heartbeat_tick_total{type=\"region\"}) by (job)",
+              "format": "time_series",
+              "intervalFactor": 2,
+              "legendFormat": "{{job}}",
+              "refId": "A",
+              "step": 10
+            }
+          ],
+          "thresholds": [],
+          "timeFrom": null,
+          "timeShift": null,
+          "title": "region",
+          "tooltip": {
+            "msResolution": false,
+            "shared": true,
+            "sort": 0,
+            "value_type": "cumulative"
+          },
+          "type": "graph",
+          "xaxis": {
+            "buckets": null,
+            "mode": "time",
+            "name": null,
+            "show": true,
+            "values": []
+          },
+          "yaxes": [
+            {
+              "format": "short",
+              "label": "",
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            },
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": false
+            }
+          ]
+        }
+      ],
+      "repeat": null,
+      "repeatIteration": null,
+      "repeatRowId": null,
+      "showTitle": true,
+      "title": "Cluster",
+      "titleSize": "h6"
+    },
+    {
+      "collapse": true,
+      "height": 250,
+      "panels": [
+        {
+          "aliasColors": {},
+          "bars": false,
+          "dashLength": 10,
+          "dashes": false,
+          "datasource": "${DS_TEST-CLUSTER}",
+          "decimals": 1,
+          "editable": true,
+          "error": false,
+          "fill": 0,
+          "grid": {},
+          "id": 1584,
+          "legend": {
+            "alignAsTable": true,
+            "avg": false,
+            "current": true,
+            "hideEmpty": true,
+            "hideZero": true,
+            "max": true,
+            "min": false,
+            "rightSide": true,
+            "show": true,
+            "sideWidth": 250,
+            "total": false,
+            "values": true
+          },
+          "lines": true,
+          "linewidth": 1,
+          "links": [],
+          "nullPointMode": "null as zero",
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
+          "renderer": "flot",
+          "seriesOverrides": [],
+          "spaceLength": 10,
+          "span": 6,
+          "stack": false,
+          "steppedLine": false,
+          "targets": [
+            {
+              "expr": "sum(rate(tikv_scheduler_too_busy_total[1m])) by (job)",
+              "format": "time_series",
+              "intervalFactor": 2,
+              "legendFormat": "scheduler-{{job}}",
+              "metric": "",
+              "refId": "A",
+              "step": 4
+            },
+            {
+              "expr": "sum(rate(tikv_channel_full_total[1m])) by (job)",
+              "format": "time_series",
+              "intervalFactor": 2,
+              "legendFormat": "channelfull-{{job}}",
+              "metric": "",
+              "refId": "B",
+              "step": 4
+            },
+            {
+              "expr": "sum(rate(tikv_coprocessor_request_error{type='full'}[1m])) by (job)",
+              "format": "time_series",
+              "intervalFactor": 2,
+              "legendFormat": "coprocessor-{{job}}",
+              "metric": "",
+              "refId": "C",
+              "step": 4
+            },
+            {
+              "expr": "avg(tikv_engine_write_stall{type=\"write_stall_percentile99\"}) by (job)",
+              "format": "time_series",
+              "intervalFactor": 2,
+              "legendFormat": "stall-{{job}}",
+              "refId": "D"
+            }
+          ],
+          "thresholds": [],
+          "timeFrom": null,
+          "timeShift": null,
+          "title": "server is busy",
+          "tooltip": {
+            "msResolution": false,
+            "shared": true,
+            "sort": 2,
+            "value_type": "individual"
+          },
+          "type": "graph",
+          "xaxis": {
+            "buckets": null,
+            "mode": "time",
+            "name": null,
+            "show": true,
+            "values": []
+          },
+          "yaxes": [
+            {
+              "format": "none",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": "0",
+              "show": true
+            },
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": false
+            }
+          ]
+        },
+        {
+          "alert": {
+            "conditions": [
+              {
+                "evaluator": {
+                  "params": [
+                    0
+                  ],
+                  "type": "gt"
+                },
+                "operator": {
+                  "type": "and"
+                },
+                "query": {
+                  "params": [
+                    "A",
+                    "10s",
+                    "now"
+                  ]
+                },
+                "reducer": {
+                  "params": [],
+                  "type": "max"
+                },
+                "type": "query"
+              }
+            ],
+            "executionErrorState": "alerting",
+            "frequency": "10s",
+            "handler": 1,
+            "message": "TiKV server report failures",
+            "name": "server report failures alert",
+            "noDataState": "ok",
+            "notifications": []
+          },
+          "aliasColors": {},
+          "bars": false,
+          "dashLength": 10,
+          "dashes": false,
+          "datasource": "${DS_TEST-CLUSTER}",
+          "decimals": 1,
+          "editable": true,
+          "error": false,
+          "fill": 0,
+          "grid": {},
+          "id": 18,
+          "legend": {
+            "alignAsTable": true,
+            "avg": false,
+            "current": true,
+            "hideEmpty": true,
+            "hideZero": true,
+            "max": true,
+            "min": false,
+            "rightSide": true,
+            "show": true,
+            "sideWidth": 250,
+            "sort": "max",
+            "sortDesc": true,
+            "total": false,
+            "values": true
+          },
+          "lines": true,
+          "linewidth": 1,
+          "links": [],
+          "nullPointMode": "null as zero",
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
+          "renderer": "flot",
+          "seriesOverrides": [],
+          "spaceLength": 10,
+          "span": 6,
+          "stack": false,
+          "steppedLine": false,
+          "targets": [
+            {
+              "expr": "sum(rate(tikv_server_report_failure_msg_total[1m])) by (type,instance,job,store_id)",
+              "format": "time_series",
+              "intervalFactor": 2,
+              "legendFormat": "{{job}} - {{type}} - to - {{store_id}}",
+              "metric": "tikv_server_raft_store_msg_total",
+              "refId": "A",
+              "step": 10
+            }
+          ],
+          "thresholds": [
+            {
+              "colorMode": "critical",
+              "fill": true,
+              "line": true,
+              "op": "gt",
+              "value": 0
+            }
+          ],
+          "timeFrom": null,
+          "timeShift": null,
+          "title": "server report failures",
+          "tooltip": {
+            "msResolution": false,
+            "shared": true,
+            "sort": 0,
+            "value_type": "cumulative"
+          },
+          "type": "graph",
+          "xaxis": {
+            "buckets": null,
+            "mode": "time",
+            "name": null,
+            "show": true,
+            "values": []
+          },
+          "yaxes": [
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": "0",
+              "show": true
+            },
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            }
+          ]
+        },
+        {
+          "aliasColors": {},
+          "bars": false,
+          "dashLength": 10,
+          "dashes": false,
+          "datasource": "${DS_TEST-CLUSTER}",
+          "decimals": 1,
+          "editable": true,
+          "error": false,
+          "fill": 0,
+          "grid": {},
+          "id": 1718,
+          "legend": {
+            "alignAsTable": true,
+            "avg": false,
+            "current": true,
+            "hideEmpty": true,
+            "hideZero": true,
+            "max": true,
+            "min": false,
+            "rightSide": true,
+            "show": true,
+            "sideWidth": 250,
+            "sort": "max",
+            "sortDesc": true,
+            "total": false,
+            "values": true
+          },
+          "lines": true,
+          "linewidth": 1,
+          "links": [],
+          "nullPointMode": "null as zero",
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
+          "renderer": "flot",
+          "seriesOverrides": [],
+          "spaceLength": 10,
+          "span": 6,
+          "stack": false,
+          "steppedLine": false,
+          "targets": [
+            {
+              "expr": "sum(rate(tikv_storage_engine_async_request_total{status!~\"success|all\"}[1m])) by (job, status)",
+              "format": "time_series",
+              "intervalFactor": 2,
+              "legendFormat": "{{job}}-{{status}}",
+              "metric": "",
+              "refId": "A",
+              "step": 4
+            }
+          ],
+          "thresholds": [],
+          "timeFrom": null,
+          "timeShift": null,
+          "title": "raftstore error",
+          "tooltip": {
+            "msResolution": false,
+            "shared": true,
+            "sort": 2,
+            "value_type": "individual"
+          },
+          "type": "graph",
+          "xaxis": {
+            "buckets": null,
+            "mode": "time",
+            "name": null,
+            "show": true,
+            "values": []
+          },
+          "yaxes": [
+            {
+              "format": "none",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": "0",
+              "show": true
+            },
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": false
+            }
+          ]
+        },
+        {
+          "aliasColors": {},
+          "bars": false,
+          "dashLength": 10,
+          "dashes": false,
+          "datasource": "${DS_TEST-CLUSTER}",
+          "decimals": 1,
+          "editable": true,
+          "error": false,
+          "fill": 0,
+          "grid": {},
+          "id": 1719,
+          "legend": {
+            "alignAsTable": true,
+            "avg": false,
+            "current": true,
+            "hideEmpty": true,
+            "hideZero": true,
+            "max": true,
+            "min": false,
+            "rightSide": true,
+            "show": true,
+            "sideWidth": 250,
+            "sort": "max",
+            "sortDesc": true,
+            "total": false,
+            "values": true
+          },
+          "lines": true,
+          "linewidth": 1,
+          "links": [],
+          "nullPointMode": "null as zero",
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
+          "renderer": "flot",
+          "seriesOverrides": [],
+          "spaceLength": 10,
+          "span": 6,
+          "stack": false,
+          "steppedLine": false,
+          "targets": [
+            {
+              "expr": "sum(rate(tikv_scheduler_stage_total{stage=~\"snapshot_err|prepare_write_err\"}[1m])) by (job, stage)",
+              "format": "time_series",
+              "intervalFactor": 2,
+              "legendFormat": "{{job}}-{{stage}}",
+              "metric": "",
+              "refId": "A",
+              "step": 4
+            }
+          ],
+          "thresholds": [],
+          "timeFrom": null,
+          "timeShift": null,
+          "title": "scheduler error",
+          "tooltip": {
+            "msResolution": false,
+            "shared": true,
+            "sort": 2,
+            "value_type": "individual"
+          },
+          "type": "graph",
+          "xaxis": {
+            "buckets": null,
+            "mode": "time",
+            "name": null,
+            "show": true,
+            "values": []
+          },
+          "yaxes": [
+            {
+              "format": "none",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": "0",
+              "show": true
+            },
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": false
+            }
+          ]
+        },
+        {
+          "aliasColors": {},
+          "bars": false,
+          "dashLength": 10,
+          "dashes": false,
+          "datasource": "${DS_TEST-CLUSTER}",
+          "decimals": 1,
+          "editable": true,
+          "error": false,
+          "fill": 0,
+          "grid": {},
+          "id": 1720,
+          "legend": {
+            "alignAsTable": true,
+            "avg": false,
+            "current": true,
+            "hideEmpty": true,
+            "hideZero": true,
+            "max": true,
+            "min": false,
+            "rightSide": true,
+            "show": true,
+            "sideWidth": 250,
+            "sort": "max",
+            "sortDesc": true,
+            "total": false,
+            "values": true
+          },
+          "lines": true,
+          "linewidth": 1,
+          "links": [],
+          "nullPointMode": "null as zero",
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
+          "renderer": "flot",
+          "seriesOverrides": [],
+          "spaceLength": 10,
+          "span": 6,
+          "stack": false,
+          "steppedLine": false,
+          "targets": [
+            {
+              "expr": "sum(rate(tikv_coprocessor_request_error[1m])) by (job, reason)",
+              "format": "time_series",
+              "intervalFactor": 2,
+              "legendFormat": "{{job}}-{{reason}}",
+              "metric": "",
+              "refId": "A",
+              "step": 4
+            }
+          ],
+          "thresholds": [],
+          "timeFrom": null,
+          "timeShift": null,
+          "title": "coprocessor error",
+          "tooltip": {
+            "msResolution": false,
+            "shared": true,
+            "sort": 2,
+            "value_type": "individual"
+          },
+          "type": "graph",
+          "xaxis": {
+            "buckets": null,
+            "mode": "time",
+            "name": null,
+            "show": true,
+            "values": []
+          },
+          "yaxes": [
+            {
+              "format": "none",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": "0",
+              "show": true
+            },
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": false
+            }
+          ]
+        },
+        {
+          "aliasColors": {},
+          "bars": false,
+          "dashLength": 10,
+          "dashes": false,
+          "datasource": "${DS_TEST-CLUSTER}",
+          "decimals": 1,
+          "editable": true,
+          "error": false,
+          "fill": 0,
+          "grid": {},
+          "id": 1721,
+          "legend": {
+            "alignAsTable": true,
+            "avg": false,
+            "current": true,
+            "hideEmpty": true,
+            "hideZero": true,
+            "max": true,
+            "min": false,
+            "rightSide": true,
+            "show": true,
+            "sideWidth": 250,
+            "sort": "max",
+            "sortDesc": true,
+            "total": false,
+            "values": true
+          },
+          "lines": true,
+          "linewidth": 1,
+          "links": [],
+          "nullPointMode": "null as zero",
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
+          "renderer": "flot",
+          "seriesOverrides": [],
+          "spaceLength": 10,
+          "span": 6,
+          "stack": false,
+          "steppedLine": false,
+          "targets": [
+            {
+              "expr": "sum(rate(tikv_grpc_msg_fail_total[1m])) by (job, type)",
+              "format": "time_series",
+              "intervalFactor": 2,
+              "legendFormat": "{{job}}-{{type}}",
+              "metric": "",
+              "refId": "A",
+              "step": 4
+            }
+          ],
+          "thresholds": [],
+          "timeFrom": null,
+          "timeShift": null,
+          "title": "coprocessor error",
+          "tooltip": {
+            "msResolution": false,
+            "shared": true,
+            "sort": 2,
+            "value_type": "individual"
+          },
+          "type": "graph",
+          "xaxis": {
+            "buckets": null,
+            "mode": "time",
+            "name": null,
+            "show": true,
+            "values": []
+          },
+          "yaxes": [
+            {
+              "format": "none",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": "0",
+              "show": true
+            },
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": false
+            }
+          ]
+        },
+        {
+          "aliasColors": {},
+          "bars": false,
+          "dashLength": 10,
+          "dashes": false,
+          "datasource": "${DS_TEST-CLUSTER}",
+          "decimals": 1,
+          "editable": true,
+          "error": false,
+          "fill": 0,
+          "grid": {},
+          "id": 1722,
+          "legend": {
+            "alignAsTable": true,
+            "avg": false,
+            "current": true,
+            "hideEmpty": true,
+            "hideZero": true,
+            "max": true,
+            "min": false,
+            "rightSide": true,
+            "show": true,
+            "sideWidth": 250,
+            "sort": "current",
+            "sortDesc": true,
+            "total": false,
+            "values": true
+          },
+          "lines": true,
+          "linewidth": 1,
+          "links": [],
+          "nullPointMode": "null",
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
+          "renderer": "flot",
+          "seriesOverrides": [
+            {
+              "alias": "total",
+              "lines": false
+            }
+          ],
+          "spaceLength": 10,
+          "span": 6,
+          "stack": false,
+          "steppedLine": false,
+          "targets": [
+            {
+              "expr": "delta(tikv_pd_heartbeat_tick_total{type=\"leader\"}[1m]) by (job)",
+              "format": "time_series",
+              "hide": false,
+              "intervalFactor": 2,
+              "legendFormat": "{{job}}",
+              "refId": "B"
+            }
+          ],
+          "thresholds": [],
+          "timeFrom": null,
+          "timeShift": null,
+          "title": "leader drop",
+          "tooltip": {
+            "msResolution": false,
+            "shared": true,
+            "sort": 0,
+            "value_type": "cumulative"
+          },
+          "type": "graph",
+          "xaxis": {
+            "buckets": null,
+            "mode": "time",
+            "name": null,
+            "show": true,
+            "values": []
+          },
+          "yaxes": [
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": "0",
+              "show": true
+            },
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            }
+          ]
+        },
+        {
+          "aliasColors": {},
+          "bars": false,
+          "dashLength": 10,
+          "dashes": false,
+          "datasource": "${DS_TEST-CLUSTER}",
+          "decimals": 1,
+          "editable": true,
+          "error": false,
+          "fill": 0,
+          "grid": {},
+          "id": 1723,
+          "legend": {
+            "alignAsTable": true,
+            "avg": false,
+            "current": true,
+            "hideEmpty": true,
+            "hideZero": true,
+            "max": true,
+            "min": false,
+            "rightSide": true,
+            "show": true,
+            "sideWidth": 250,
+            "sort": "current",
+            "sortDesc": true,
+            "total": false,
+            "values": true
+          },
+          "lines": true,
+          "linewidth": 1,
+          "links": [],
+          "nullPointMode": "null",
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
+          "renderer": "flot",
+          "seriesOverrides": [
+            {
+              "alias": "total",
+              "lines": false
+            }
+          ],
+          "spaceLength": 10,
+          "span": 6,
+          "stack": false,
+          "steppedLine": false,
+          "targets": [
+            {
+              "expr": "sum(tikv_raftstore_leader_missing) by (job)",
+              "format": "time_series",
+              "hide": false,
+              "intervalFactor": 2,
+              "legendFormat": "{{job}}",
+              "refId": "B"
+            }
+          ],
+          "thresholds": [],
+          "timeFrom": null,
+          "timeShift": null,
+          "title": "leader missing",
+          "tooltip": {
+            "msResolution": false,
+            "shared": true,
+            "sort": 0,
+            "value_type": "cumulative"
+          },
+          "type": "graph",
+          "xaxis": {
+            "buckets": null,
+            "mode": "time",
+            "name": null,
+            "show": true,
+            "values": []
+          },
+          "yaxes": [
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": "0",
+              "show": true
+            },
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            }
+          ]
+        }
+      ],
+      "repeat": null,
+      "repeatIteration": null,
+      "repeatRowId": null,
+      "showTitle": true,
+      "title": "Errors",
+      "titleSize": "h6"
+    },
+    {
+      "collapse": true,
+      "height": "300",
+      "panels": [
+        {
+          "aliasColors": {},
+          "bars": false,
+          "dashLength": 10,
+          "dashes": false,
+          "datasource": "${DS_TEST-CLUSTER}",
+          "decimals": 1,
+          "editable": true,
+          "error": false,
           "fill": 0,
           "grid": {},
           "id": 34,
@@ -187,7 +1970,7 @@
             "min": false,
             "rightSide": true,
             "show": true,
-            "sideWidth": 250,
+            "sideWidth": 300,
             "total": false,
             "values": true
           },
@@ -346,7 +2129,7 @@
           "error": false,
           "fill": 5,
           "grid": {},
-          "id": 56,
+          "id": 1705,
           "legend": {
             "alignAsTable": true,
             "avg": false,
@@ -377,6 +2160,7 @@
           "targets": [
             {
               "expr": "sum(tikv_engine_size_bytes) by (job)",
+              "format": "time_series",
               "intervalFactor": 2,
               "legendFormat": "{{job}}",
               "refId": "A",
@@ -559,40 +2343,6 @@
           ]
         },
         {
-          "alert": {
-            "conditions": [
-              {
-                "evaluator": {
-                  "params": [
-                    0
-                  ],
-                  "type": "gt"
-                },
-                "operator": {
-                  "type": "and"
-                },
-                "query": {
-                  "params": [
-                    "A",
-                    "10s",
-                    "now"
-                  ]
-                },
-                "reducer": {
-                  "params": [],
-                  "type": "max"
-                },
-                "type": "query"
-              }
-            ],
-            "executionErrorState": "alerting",
-            "frequency": "10s",
-            "handler": 1,
-            "message": "TiKV server report failures",
-            "name": "server report failures alert",
-            "noDataState": "ok",
-            "notifications": []
-          },
           "aliasColors": {},
           "bars": false,
           "dashLength": 10,
@@ -603,7 +2353,7 @@
           "error": false,
           "fill": 0,
           "grid": {},
-          "id": 18,
+          "id": 1717,
           "legend": {
             "alignAsTable": true,
             "avg": false,
@@ -644,15 +2394,7 @@
               "step": 10
             }
           ],
-          "thresholds": [
-            {
-              "colorMode": "critical",
-              "fill": true,
-              "line": true,
-              "op": "gt",
-              "value": 0
-            }
-          ],
+          "thresholds": [],
           "timeFrom": null,
           "timeShift": null,
           "title": "server report failures",
@@ -1055,7 +2797,7 @@
           "error": false,
           "fill": 0,
           "grid": {},
-          "id": 1584,
+          "id": 1716,
           "legend": {
             "alignAsTable": true,
             "avg": false,
@@ -9241,6 +10983,7 @@
           "targets": [
             {
               "expr": "sum(rate(tikv_thread_cpu_seconds_total{name=~\"grpc.*\"}[1m])) by (job)",
+              "format": "time_series",
               "intervalFactor": 2,
               "legendFormat": "{{job}}",
               "refId": "A",
@@ -12371,6 +14114,8 @@
         {
           "aliasColors": {},
           "bars": false,
+          "dashLength": 10,
+          "dashes": false,
           "datasource": "${DS_TEST-CLUSTER}",
           "decimals": 1,
           "fill": 1,
@@ -12396,6 +14141,7 @@
           "points": false,
           "renderer": "flot",
           "seriesOverrides": [],
+          "spaceLength": 10,
           "span": 6,
           "stack": false,
           "steppedLine": false,
@@ -12419,6 +14165,7 @@
           },
           "type": "graph",
           "xaxis": {
+            "buckets": null,
             "mode": "time",
             "name": null,
             "show": true,
@@ -12446,6 +14193,8 @@
         {
           "aliasColors": {},
           "bars": false,
+          "dashLength": 10,
+          "dashes": false,
           "datasource": "${DS_TEST-CLUSTER}",
           "decimals": 1,
           "fill": 1,
@@ -12471,6 +14220,7 @@
           "points": false,
           "renderer": "flot",
           "seriesOverrides": [],
+          "spaceLength": 10,
           "span": 6,
           "stack": false,
           "steppedLine": false,
@@ -12494,6 +14244,7 @@
           },
           "type": "graph",
           "xaxis": {
+            "buckets": null,
             "mode": "time",
             "name": null,
             "show": true,
@@ -12521,6 +14272,8 @@
         {
           "aliasColors": {},
           "bars": false,
+          "dashLength": 10,
+          "dashes": false,
           "datasource": "${DS_TEST-CLUSTER}",
           "decimals": 1,
           "fill": 1,
@@ -12546,6 +14299,7 @@
           "points": false,
           "renderer": "flot",
           "seriesOverrides": [],
+          "spaceLength": 10,
           "span": 6,
           "stack": false,
           "steppedLine": false,
@@ -12569,6 +14323,7 @@
           },
           "type": "graph",
           "xaxis": {
+            "buckets": null,
             "mode": "time",
             "name": null,
             "show": true,
@@ -12596,6 +14351,8 @@
         {
           "aliasColors": {},
           "bars": false,
+          "dashLength": 10,
+          "dashes": false,
           "datasource": "${DS_TEST-CLUSTER}",
           "decimals": 1,
           "fill": 1,
@@ -12621,6 +14378,7 @@
           "points": false,
           "renderer": "flot",
           "seriesOverrides": [],
+          "spaceLength": 10,
           "span": 6,
           "stack": false,
           "steppedLine": false,
@@ -12645,6 +14403,7 @@
           },
           "type": "graph",
           "xaxis": {
+            "buckets": null,
             "mode": "time",
             "name": null,
             "show": true,
@@ -12755,6 +14514,6 @@
     ]
   },
   "timezone": "browser",
-  "title": "Test-Cluster-TiKV",
-  "version": 1
+  "title": "Test-Cluster-TiKV-cluster-errors",
+  "version": 2
 }
